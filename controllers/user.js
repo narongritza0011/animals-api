@@ -59,7 +59,7 @@ const Login = async (req, res) => {
   try {
     //get user input
     const { email, password } = req.body;
-
+    // console.log(req.body)
     //validate user input
     if (!(email && password)) {
       res.status(400).json("All input is required");
